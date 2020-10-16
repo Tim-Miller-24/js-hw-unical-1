@@ -1,4 +1,4 @@
-var name = prompt("Как тебя зовут?");
+/* var name = prompt("Как тебя зовут?");
 
 if (name == '') {
     alert("Ну раз не говоришь своё имя, буду звать тебя Васей.");
@@ -36,23 +36,35 @@ else if ( 101 <= age && age <= 149) {
 } 
 else if ( age <= 0 || age >= 150) {
     alert("Что за ерунда. Тебя либо ещё нет, либо уже нет.");
-}
+} */
 
 
-var anegdot = prompt("Хочешь расскажу анекдот?");
+var anegdot = confirm("Хочешь расскажу анекдот?");
 
-if ( anegdot == 'yes' || anegdot == 'true' || anegdot == 'да' || anegdot == 'Yes' || anegdot == 'True' || anegdot == 'Да' ) {
+if (anegdot == true) {
     alert("Ну слушай.");
-} else if ( anegdot == 'no' || anegdot == 'false' || anegdot == 'нет' || anegdot == 'No' || anegdot == 'False' || anegdot == 'Нет' ) {
+} else {
     alert("А я всё равно расскажу!");
 }
 
+/* if ( anegdot == 'yes' || anegdot == 'true' || anegdot == 'да' || anegdot == 'Yes' || anegdot == 'True' || anegdot == 'Да' ) {
+    alert("Ну слушай.");
+} else if ( anegdot == 'no' || anegdot == 'false' || anegdot == 'нет' || anegdot == 'No' || anegdot == 'False' || anegdot == 'Нет' ) {
+    alert("А я всё равно расскажу!");
+} */
 
 
-var badQuest = prompt('О мертвых либо ничего, либо хорошо. Например: "Он умер, и это хорошо".');
 
-if ( badQuest == 'yes' || badQuest == 'true' || badQuest == 'да' || badQuest == 'Yes' || badQuest == 'True' || badQuest == 'Да' ) {
+var badQuest = confirm('О мертвых либо ничего, либо хорошо. Например: "Он умер, и это хорошо".');
+
+if (anegdot == true) {
+    alert("Ну пока, спишемся.");
+} else {
+    alert('Ох какие мы нежные, такие "неженки" не для меня');
+}
+
+/* if ( badQuest == 'yes' || badQuest == 'true' || badQuest == 'да' || badQuest == 'Yes' || badQuest == 'True' || badQuest == 'Да' ) {
     alert("Ну пока, спишемся.");
 } else if ( badQuest == 'no' || badQuest == 'false' || badQuest == 'нет' || badQuest == 'No' || badQuest == 'False' || badQuest == 'Нет' ) {
     alert('Ох какие мы нежные, такие "неженки" не для меня');
-}
+} */
